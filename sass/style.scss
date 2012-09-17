@@ -1,4 +1,5 @@
 @import "normalize";
+@import "compass/reset";
 @import "compass/css3";
 
 img {
@@ -23,6 +24,9 @@ img {
     }
 }
 
+/**
+ * index.html
+ */ 
 .logo {
     position: fixed;
     top: 8%;
@@ -46,6 +50,87 @@ img {
     @include border-radius(8px);
 }
 
+/**
+ * template.html
+ */
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 20%;
+    width: 71%;
+    .menu {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #eee;
+        background-color: #28201D;
+        height: 50px;
+        ul {
+            height: 30px;
+            line-height: 30px;
+            padding-top: 10px;
+            list-style-type: none;
+            li {
+                letter-spacing: 6px;
+                font-size: 17pt;
+                text-align: center;
+                float: left;
+                &.link_head {
+                    width: 33%;
+                }
+                &.link {
+                    width: 20%;
+                    border-right: 2px solid #fff;
+                }
+                &.link:last-child, &.last {
+                    border: 0;
+                }
+                &.last {
+                    border: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: #eee;
+                }
+                a.active {
+                    color: #6B5E4B;
+                }
+            }
+        }
+    }
+}
+
+.body {
+    position: fixed;
+    top: 20%;
+    height: 57%;
+    width: 71%;
+    .content {
+        margin-left: 25.3%;
+        background-color: #fff;
+        min-height: 100%;
+        @include opacity(0.8);
+        padding-left: 60px;
+        .header {
+            position: relative;
+            font-size: 21pt;
+            font-weight: bold;
+            height: 50px;
+            line-height: 50px;
+            padding: 40px 0 40px 0;
+        }
+        .message {
+            font-size: 18pt;
+            padding-right: 20px;
+            line-height: 40px;
+        }
+    }
+}
+
+/**
+ * footer
+ */ 
 #footer {
     position: fixed;
     bottom: 0;
@@ -71,11 +156,10 @@ img {
         height: 100%;
         background-color: #eee;
         .top {
-            height: 100%;
+            margin-top: 10px;
             .right_link {
                 width: 35%;
                 float: right;
-                margin-top: 5px;
                 ul {
                     list-style-type: none;
                     li {
@@ -104,7 +188,6 @@ img {
             }
             .main_link {
                 float: right;
-                margin-top: 5px;
                 width: 16%;
                 ul {
                     list-style-type: none;

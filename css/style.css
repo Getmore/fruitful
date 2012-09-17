@@ -331,6 +331,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
@@ -346,6 +393,9 @@ img.logo_bg {
   /* Set up proportionate scaling */
   height: 100%; }
 
+/**
+ * index.html
+ */
 .logo {
   position: fixed;
   top: 8%;
@@ -372,6 +422,73 @@ img.logo_bg {
   -o-border-radius: 8px;
   border-radius: 8px; }
 
+/**
+ * template.html
+ */
+.header {
+  position: fixed;
+  top: 0;
+  height: 20%;
+  width: 71%; }
+  .header .menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #eee;
+    background-color: #28201D;
+    height: 50px; }
+    .header .menu ul {
+      height: 30px;
+      line-height: 30px;
+      padding-top: 10px;
+      list-style-type: none; }
+      .header .menu ul li {
+        letter-spacing: 6px;
+        font-size: 17pt;
+        text-align: center;
+        float: left; }
+        .header .menu ul li.link_head {
+          width: 33%; }
+        .header .menu ul li.link {
+          width: 20%;
+          border-right: 2px solid #fff; }
+        .header .menu ul li.link:last-child, .header .menu ul li.last {
+          border: 0; }
+        .header .menu ul li.last {
+          border: 0; }
+        .header .menu ul li a {
+          text-decoration: none;
+          color: #eee; }
+        .header .menu ul li a.active {
+          color: #6B5E4B; }
+
+.body {
+  position: fixed;
+  top: 20%;
+  height: 57%;
+  width: 71%; }
+  .body .content {
+    margin-left: 25.3%;
+    background-color: #fff;
+    min-height: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    padding-left: 60px; }
+    .body .content .header {
+      position: relative;
+      font-size: 21pt;
+      font-weight: bold;
+      height: 50px;
+      line-height: 50px;
+      padding: 40px 0 40px 0; }
+    .body .content .message {
+      font-size: 18pt;
+      padding-right: 20px;
+      line-height: 40px; }
+
+/**
+ * footer
+ */
 #footer {
   position: fixed;
   bottom: 0;
@@ -394,11 +511,10 @@ img.logo_bg {
     height: 100%;
     background-color: #eee; }
     #footer .right .top {
-      height: 100%; }
+      margin-top: 10px; }
       #footer .right .top .right_link {
         width: 35%;
-        float: right;
-        margin-top: 5px; }
+        float: right; }
         #footer .right .top .right_link ul {
           list-style-type: none; }
           #footer .right .top .right_link ul li {
@@ -425,7 +541,6 @@ img.logo_bg {
               background: #00a7c1 url("../images/icon/facebook.png") no-repeat 18px center; }
       #footer .right .top .main_link {
         float: right;
-        margin-top: 5px;
         width: 16%; }
         #footer .right .top .main_link ul {
           list-style-type: none; }
