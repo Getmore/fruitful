@@ -1,5 +1,112 @@
 @import "normalize";
 
-body {
+img {
+    &.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &.logo_bg {
+        /* Set up proportionate scaling */
+        height: 100%;
+    }
+}
+
+.logo {
+    position: fixed;
+    top: 8%;
+    width: 18%;
+    height: 23%;
+    text-align: center;
+}
+
+.header_text {
+    position: fixed;
+    top: 24%;
+    left: 18%;
+    width: 48%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #333;
+    padding-left: 9%;
+    font-size: 21pt;
+    color: #fff;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    height: 23%;
     width: 100%;
+    .left {
+        float: left;
+        width: 18%;
+        height: 100%;
+        background-color: #222;
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    .right {
+        position: relative;
+        float: left;
+        width: 82%;
+        height: 100%;
+        background-color: #eee;
+        .top {
+            height: 100%;
+            .right_link {
+                width: 35%;
+                float: right;
+                margin-top: 5px;
+                ul {
+                    list-style-type: none;
+                    li {
+                        padding-left: 80px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 15pt;
+                        color: #eee;
+                        &.mail {
+                            background: blue url('../images/icon/mail.png') no-repeat 5px center;
+                        }
+                        &.facebook {
+                            margin-top: 10px;
+                            background: blue url('../images/icon/facebook.png') no-repeat 15px center;
+                        }
+                    }
+                }
+            }
+            .main_link {
+                float: right;
+                margin-top: 5px;
+                width: 16%;
+            }
+        }
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            z-index: 100;
+            width: 100%;
+            height: 15px;
+            line-height: 15px;
+            background-color: #333;
+            color: #ccc;
+            font-size: 0.8em;
+            .text {
+                text-align: right;
+                padding-right: 20px;
+            }
+        }
+    }
 }
