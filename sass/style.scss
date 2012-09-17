@@ -42,11 +42,11 @@ img {
     width: 48%;
     height: 45px;
     line-height: 45px;
-    background-color: #403835;
+    background-color: #372E2A;
     padding-left: 9%;
     font-size: 21pt;
     color: #fff;
-    @include opacity(0.8);
+    @include opacity(0.95);
     @include border-radius(8px);
 }
 
@@ -63,9 +63,10 @@ img {
         position: absolute;
         bottom: 0;
         width: 100%;
-        color: #eee;
-        background-color: #28201D;
+        color: #fff;
+        background-color: #372E2A;
         height: 50px;
+        @include border-corner-radius(top, right, 8px);
         ul {
             height: 30px;
             line-height: 30px;
@@ -94,7 +95,7 @@ img {
                     color: #eee;
                 }
                 a.active {
-                    color: #6B5E4B;
+                    color: #C7B299;
                 }
             }
         }
@@ -110,7 +111,7 @@ img {
         margin-left: 25.3%;
         background-color: #fff;
         min-height: 100%;
-        @include opacity(0.8);
+        @include opacity(0.75);
         padding-left: 60px;
         .header {
             position: relative;
@@ -118,7 +119,7 @@ img {
             font-weight: bold;
             height: 50px;
             line-height: 50px;
-            padding: 40px 0 40px 0;
+            padding: 40px 0;
         }
         .message {
             font-size: 18pt;
@@ -126,7 +127,63 @@ img {
             line-height: 40px;
         }
     }
+    &.contact {
+        top: 12%;
+        min-height: 60%;
+        width: 100%;
+        .left {
+            float: left;
+            width: 71%;
+            min-height: 100%;
+            background-color: #fff;
+            @include opacity(0.8);
+            text-align: center;
+            img {
+                padding-top: 50px;
+            }   
+        }
+        .right {
+            float: left;
+            min-width: 29%;
+            min-height: 100%;
+            background-color: #28201D;
+            color: #fff;
+            .message {
+                padding: 20px 40px;
+                h3 {
+                    font-size: 1.6em;
+                    padding: 10px 0;
+                }
+                p {
+                    font-size: 1.4em;
+                    padding: 10px 0;
+                }
+            }
+        }  
+    }
+    &.facebook {
+        top: 0;
+        left: 18%;
+        min-height: 100%;
+        background-color: #000;
+        @include opacity(0.5);
+        width: 53%;
+        .message {
+            padding-left: 10%;
+            padding-top: 23%;
+            color: #fff;
+            h3 {
+                font-size: 1.4em;
+                padding-bottom: 20px;
+            }
+            p {
+                padding: 20px 0;
+            }
+        }
+    }
 }
+
+
 
 /**
  * footer
@@ -140,9 +197,10 @@ img {
         float: left;
         width: 18%;
         height: 100%;
-        background-color: #413936;
+        background-color: #372E2A;
         padding-top: 2%;
         text-align: center;
+        @include opacity(0.95);
         .image {
             width: 50%;
             margin: 0 auto;
@@ -183,6 +241,9 @@ img {
                             margin-top: 10px;
                             background: #00A7C1 url('../images/icon/facebook.png') no-repeat 18px center;
                         }
+                        &:hover {
+                            background-color: #FF6600;
+                        }
                     }
                 }
             }
@@ -212,7 +273,7 @@ img {
                         }
                         &:hover {
                             background: #403835 url('../images/icon/item.png') no-repeat right center;
-                            color: #fff;
+                            color: #666;
                             @include opacity(0.8);
                             @include border-radius(8px);
                             /* fix IE and chrome hover */
@@ -237,10 +298,11 @@ img {
             width: 100%;
             height: 15px;
             line-height: 15px;
-            background-color: #746D67;
+            background-color: #534741;
             color: #222;
             font-size: 0.8em;
             font-weight: bold;
+            @include opacity(0.8);
             .text {
                 text-align: right;
                 padding-right: 20px;

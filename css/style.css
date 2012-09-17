@@ -410,12 +410,12 @@ img.logo_bg {
   width: 48%;
   height: 45px;
   line-height: 45px;
-  background-color: #403835;
+  background-color: #372E2A;
   padding-left: 9%;
   font-size: 21pt;
   color: #fff;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -434,9 +434,12 @@ img.logo_bg {
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: #eee;
-    background-color: #28201D;
-    height: 50px; }
+    color: #fff;
+    background-color: #372E2A;
+    height: 50px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px; }
     .header .menu ul {
       height: 30px;
       line-height: 30px;
@@ -460,7 +463,7 @@ img.logo_bg {
           text-decoration: none;
           color: #eee; }
         .header .menu ul li a.active {
-          color: #6B5E4B; }
+          color: #C7B299; }
 
 .body {
   position: fixed;
@@ -471,8 +474,8 @@ img.logo_bg {
     margin-left: 25.3%;
     background-color: #fff;
     min-height: 100%;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+    opacity: 0.75;
     padding-left: 60px; }
     .body .content .header {
       position: relative;
@@ -480,11 +483,56 @@ img.logo_bg {
       font-weight: bold;
       height: 50px;
       line-height: 50px;
-      padding: 40px 0 40px 0; }
+      padding: 40px 0; }
     .body .content .message {
       font-size: 18pt;
       padding-right: 20px;
       line-height: 40px; }
+  .body.contact {
+    top: 12%;
+    min-height: 60%;
+    width: 100%; }
+    .body.contact .left {
+      float: left;
+      width: 71%;
+      min-height: 100%;
+      background-color: #fff;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+      opacity: 0.8;
+      text-align: center; }
+      .body.contact .left img {
+        padding-top: 50px; }
+    .body.contact .right {
+      float: left;
+      min-width: 29%;
+      min-height: 100%;
+      background-color: #28201D;
+      color: #fff; }
+      .body.contact .right .message {
+        padding: 20px 40px; }
+        .body.contact .right .message h3 {
+          font-size: 1.6em;
+          padding: 10px 0; }
+        .body.contact .right .message p {
+          font-size: 1.4em;
+          padding: 10px 0; }
+  .body.facebook {
+    top: 0;
+    left: 18%;
+    min-height: 100%;
+    background-color: #000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    width: 53%; }
+    .body.facebook .message {
+      padding-left: 10%;
+      padding-top: 23%;
+      color: #fff; }
+      .body.facebook .message h3 {
+        font-size: 1.4em;
+        padding-bottom: 20px; }
+      .body.facebook .message p {
+        padding: 20px 0; }
 
 /**
  * footer
@@ -498,9 +546,11 @@ img.logo_bg {
     float: left;
     width: 18%;
     height: 100%;
-    background-color: #413936;
+    background-color: #372E2A;
     padding-top: 2%;
-    text-align: center; }
+    text-align: center;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+    opacity: 0.95; }
     #footer .left .image {
       width: 50%;
       margin: 0 auto; }
@@ -539,6 +589,8 @@ img.logo_bg {
             #footer .right .top .right_link ul li.facebook {
               margin-top: 10px;
               background: #00a7c1 url("../images/icon/facebook.png") no-repeat 18px center; }
+            #footer .right .top .right_link ul li:hover {
+              background-color: #FF6600; }
       #footer .right .top .main_link {
         float: right;
         width: 16%; }
@@ -562,7 +614,7 @@ img.logo_bg {
               background: url("../images/icon/item.png") no-repeat right center; }
             #footer .right .top .main_link ul li:hover {
               background: #403835 url("../images/icon/item.png") no-repeat right center;
-              color: #fff;
+              color: #666;
               filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
               opacity: 0.8;
               -webkit-border-radius: 8px;
@@ -584,10 +636,12 @@ img.logo_bg {
       width: 100%;
       height: 15px;
       line-height: 15px;
-      background-color: #746D67;
+      background-color: #534741;
       color: #222;
       font-size: 0.8em;
-      font-weight: bold; }
+      font-weight: bold;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+      opacity: 0.8; }
       #footer .right .bottom .text {
         text-align: right;
         padding-right: 20px; }
