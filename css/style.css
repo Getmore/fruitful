@@ -477,6 +477,35 @@ img.logo_bg {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
     opacity: 0.75;
     padding-left: 60px; }
+    .body .content .menu {
+      margin-left: -60px;
+      color: #fff;
+      background-color: #372E2A;
+      height: 50px;
+      text-align: center; }
+      .body .content .menu ul {
+        height: 30px;
+        line-height: 30px;
+        padding-top: 10px;
+        list-style-type: none;
+        text-align: center; }
+        .body .content .menu ul li {
+          letter-spacing: 6px;
+          font-size: 17pt;
+          text-align: center;
+          float: left; }
+          .body .content .menu ul li.link {
+            width: 33%;
+            border-right: 2px solid #fff; }
+          .body .content .menu ul li.link:last-child, .body .content .menu ul li.last {
+            border: 0; }
+          .body .content .menu ul li.last {
+            border: 0; }
+          .body .content .menu ul li a {
+            text-decoration: none;
+            color: #eee; }
+          .body .content .menu ul li a.active {
+            color: #C7B299; }
     .body .content .header {
       position: relative;
       font-size: 21pt;
@@ -485,6 +514,66 @@ img.logo_bg {
       line-height: 50px;
       padding: 40px 0; }
     .body .content .message {
+      font-size: 18pt;
+      padding-right: 20px;
+      line-height: 40px; }
+  .body .room {
+    margin-left: 25.3%;
+    background-color: #fff;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+    opacity: 0.75;
+    padding-left: 60px;
+    padding-top: 20px;
+    min-height: 100%; }
+    .body .room .menu {
+      margin-left: -60px;
+      margin-bottom: 20px;
+      color: #fff;
+      background-color: #372E2A;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1;
+      height: 50px;
+      text-align: center; }
+      .body .room .menu ul {
+        height: 30px;
+        line-height: 30px;
+        padding-top: 10px;
+        list-style-type: none;
+        text-align: center; }
+        .body .room .menu ul li {
+          letter-spacing: 6px;
+          font-size: 17pt;
+          text-align: center;
+          float: left; }
+          .body .room .menu ul li.link {
+            width: 33%;
+            border-right: 2px solid #fff; }
+          .body .room .menu ul li.link:last-child {
+            border: 0; }
+          .body .room .menu ul li.last {
+            border: 0; }
+          .body .room .menu ul li a {
+            text-decoration: none;
+            color: #eee; }
+          .body .room .menu ul li a.active {
+            color: #C7B299; }
+    .body .room .header {
+      position: relative;
+      font-size: 24pt;
+      font-weight: bold;
+      height: 100px;
+      line-height: 100px;
+      float: left;
+      width: auto; }
+    .body .room ul.sub_menu li {
+      position: relative;
+      width: auto;
+      float: left;
+      padding-left: 10px;
+      overflow: hidden;
+      width: 100px;
+      height: 70px; }
+    .body .room .message {
       font-size: 18pt;
       padding-right: 20px;
       line-height: 40px; }
@@ -529,9 +618,10 @@ img.logo_bg {
       padding-top: 23%;
       color: #fff; }
       .body.facebook .message h3 {
-        font-size: 1.4em;
+        font-size: 2em;
         padding-bottom: 20px; }
       .body.facebook .message p {
+        font-size: 1.4em;
         padding: 20px 0; }
 
 /**
