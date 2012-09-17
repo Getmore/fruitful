@@ -436,12 +436,13 @@ img.logo_bg {
             color: #323232;
             font-weight: bold;
             letter-spacing: 4px;
-            padding-left: 5px; }
-            #footer .right .top .main_link ul li.margin {
-              margin-top: 10px; }
+            padding-left: 5px;
+            margin-top: 10px; }
             #footer .right .top .main_link ul li a {
               text-decoration: none;
               color: #323232; }
+            #footer .right .top .main_link ul li:first-child {
+              margin-top: 0px; }
             #footer .right .top .main_link ul li.active {
               background: url("../images/icon/item.png") no-repeat right center; }
             #footer .right .top .main_link ul li:hover {
