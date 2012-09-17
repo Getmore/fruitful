@@ -360,10 +360,12 @@ img.logo_bg {
   width: 48%;
   height: 45px;
   line-height: 45px;
-  background-color: #333;
+  background-color: #403835;
   padding-left: 9%;
   font-size: 21pt;
-  color: #fff; }
+  color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8; }
 
 #footer {
   position: fixed;
@@ -374,9 +376,12 @@ img.logo_bg {
     float: left;
     width: 18%;
     height: 100%;
-    background-color: #222;
-    text-align: center;
-    padding-top: 3%; }
+    background-color: #413936;
+    padding-top: 2%;
+    text-align: center; }
+    #footer .left .image {
+      width: 50%;
+      margin: 0 auto; }
   #footer .right {
     position: relative;
     float: left;
@@ -396,16 +401,43 @@ img.logo_bg {
             height: 30px;
             line-height: 30px;
             font-size: 15pt;
-            color: #eee; }
+            color: #eee;
+            font-weight: bold;
+            letter-spacing: 4px; }
+            #footer .right .top .right_link ul li a {
+              text-decoration: none;
+              color: #eee; }
             #footer .right .top .right_link ul li.mail {
-              background: blue url("../images/icon/mail.png") no-repeat 5px center; }
+              background: #00a7c1 url("../images/icon/mail.png") no-repeat 5px center; }
             #footer .right .top .right_link ul li.facebook {
               margin-top: 10px;
-              background: blue url("../images/icon/facebook.png") no-repeat 15px center; }
+              background: #00a7c1 url("../images/icon/facebook.png") no-repeat 15px center; }
       #footer .right .top .main_link {
         float: right;
         margin-top: 5px;
         width: 16%; }
+        #footer .right .top .main_link ul {
+          list-style-type: none; }
+          #footer .right .top .main_link ul li {
+            height: 30px;
+            line-height: 30px;
+            font-size: 16pt;
+            color: #323232;
+            font-weight: bold;
+            letter-spacing: 4px; }
+            #footer .right .top .main_link ul li.margin {
+              margin-top: 10px; }
+            #footer .right .top .main_link ul li a {
+              text-decoration: none;
+              color: #323232; }
+            #footer .right .top .main_link ul li.active {
+              background: url("../images/icon/item.png") no-repeat right center; }
+            #footer .right .top .main_link ul li:hover {
+              background: url("../images/icon/item.png") no-repeat right center; }
+      #footer .right .top .right_1 {
+        margin-right: 8%; }
+      #footer .right .top .right_2 {
+        margin-right: 13%; }
     #footer .right .bottom {
       position: absolute;
       bottom: 0;
@@ -413,9 +445,10 @@ img.logo_bg {
       width: 100%;
       height: 15px;
       line-height: 15px;
-      background-color: #333;
-      color: #ccc;
-      font-size: 0.8em; }
+      background-color: #746D67;
+      color: #222;
+      font-size: 0.8em;
+      font-weight: bold; }
       #footer .right .bottom .text {
         text-align: right;
         padding-right: 20px; }
