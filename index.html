@@ -6,9 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta content='' name='description' />
-        <meta content='' name='author' />
+        <title>賀果產後護理之家</title>
+        <meta content='產後護理之家,月子中心,坐月子中心,坐月子,產後,到府坐月子,台北,台北市' name='keywords' />
+        <meta content='賀果產後護理之家，台北巿精華區精緻獨幢溫馨月子中心，近捷運大型停車場，獨棟建築的單純場域，專業貼心的服務照護，超低照護比，照顧產婦最窩心。地址：台北市中山區新生北路三段11巷32號, Taipei, Taiwan 104' name='description' />
+        <meta content='賀果' name='author' />
         <meta content='width=device-width, initial-scale=1.0' name='viewport' />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
@@ -20,11 +21,8 @@
     </head>
     <body>
         <div id='container'>
-            <img src="images/background/01.jpg" alt="background image" class="bg" />
-            <div id='main' role='main'>
-                <div class="logo"><img src="images/background/logo.png" alt="background image" class="logo_bg" /></div>
-                <div class="header_text">賀果，細心守護您的美好。</div>
-            </div>
+            <img id='bg' src="images/background/01.jpg" alt="background image" class="bg" />
+            <div id='main' role='main'></div>
             <footer>
                 <div id="footer">
                     <div class="left"><img src="images/background/small_logo.png" alt="background image" /></div>
@@ -32,13 +30,13 @@
                         <div class="top">
                             <div class="right_link">
                                 <ul>
-                                    <li class="mail"><a href="contact.html">聯絡資訊與地圖</a></li>
-                                    <li class="facebook"><a href="facebook.html">賀果粉絲團</a></li>
+                                    <li class="mail"><a href="#!/contact">聯絡資訊與地圖</a></li>
+                                    <li class="facebook"><a href="#!/facebook">賀果粉絲團</a></li>
                                 </ul>
                             </div>
                             <div class="main_link right_2">
                                 <ul>
-                                    <li><a href="food.html">賀果月子餐</a></li>
+                                    <li id="food"><a href="#!/food">賀果月子餐</a></li>
                                     <!--
                                     <li><a href="facebook.html">賀果粉絲團</a></li>
                                     <li><a href="facebook.html">賀果粉絲團</a></li>
@@ -47,9 +45,9 @@
                             </div>
                             <div class="main_link right_1">
                                 <ul>
-                                    <li><a href="about.html">賀果的故事</a></li>
-                                    <li><a href="room.html">房型與服務</a></li>
-                                    <li><a href="environment.html">環境與設施</a></li>
+                                    <li id="about"><a href="#!/about/story">賀果的故事</a></li>
+                                    <li id="room"><a href="#!/room">房型與服務</a></li>
+                                    <li id="environment"><a href="#!/environment">環境與設施</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -58,10 +56,346 @@
                 </div>
             </footer>
         </div>
+
+<script type="text/x-mustache-template" data-id="main">
+    <div class="logo"><img src="images/background/logo.png" alt="background image" class="logo_bg" /></div>
+    <div class="header_text">賀果，細心守護您的美好。</div>
+</script>
+
+<script type="text/x-mustache-template" data-id="contact">
+    <div class="body contact">
+        <div class="left"><img src="images/map.png"></div>
+        <div class="right">
+            <div class="message">
+                <h3>聯絡資訊與地圖</h3>
+                <p>台北市中山區<br />新生北路三段11巷32號</p>
+                <p>中山國小站4號出口兩分鐘</p>
+                <p>請來電預約</p>
+                <p>02-2599-7111</p>
+                <p>0989-738-038</p>
+                <p>service@fruitful.com.tw</p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="facebook">
+    <div class="body facebook">
+        <div class="message">
+            <h3>賀果產後護理之家粉絲團</h3>
+            <p>加入粉絲團瞭解賀果的最新動態，也可以問有關賀果的問題喔。</p>
+            <p><a href="https://www.facebook.com/fruitful.com.tw"><img src="images/facebook.jpg" /></a></p>
+        </div>
+    </div>
+</script>
+<script type="text/x-mustache-template" data-id="about/story">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">賀果的故事</li>
+                <li class="link"><a href="#!/about/story" class="active">創辦人的話</a></li>
+                <li class="link"><a href="#!/about/company">賀果團隊</a></li>
+                <li class="link last"><a href="#!/about/quality">賀果品質</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">創辦人的話</div>
+            <div class="message">賀，象徵祝福和喜悅，果，代表新生和希望，為了和媽媽迎接有寶寶的未來，賀果的初衷就是建構一個不一樣的場域，不只是單純的養身，而更是養心和養品，感受由心出發，由美學和專業建構為底蘊的氛圍，賀果就是這樣有感覺的地方。</div>
+        </div>
+    </div>
+</script>
+<script type="text/x-mustache-template" data-id="about/company">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">賀果的故事</li>
+                <li class="link"><a href="#!/about/story">創辦人的話</a></li>
+                <li class="link"><a href="#!/about/company" class="active">賀果團隊</a></li>
+                <li class="link last"><a href="#!/about/quality">賀果品質</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">賀果團隊</div>
+            <div class="message">專業和親切，是賀果團隊共同特質。除了護理人員隨時陪伴，還有小兒科醫師與婦產科醫師定期看診以及中醫師、心裡諮商、社工師和營養師可按媽媽的個別需求而安排。</div>
+        </div>
+    </div>
+</script>
+<script type="text/x-mustache-template" data-id="about/quality">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">賀果的故事</li>
+                <li class="link"><a href="#!/about/story">創辦人的話</a></li>
+                <li class="link"><a href="#!/about/company">賀果團隊</a></li>
+                <li class="link last"><a href="#!/about/quality" class="active">賀果品質</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">賀果品質</div>
+            <div class="message">101年8月，賀果正式在台北衛生局合法立案，提供簽約之鄰近大醫院轉介就診服務，經衛生主管機關定期評鑑監管，所用器材均經檢驗合格。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="environment">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">環境與設施</li>
+                <li class="link"><a href="#!/environment" class="active">環境特色</a></li>
+                <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
+                <li class="link last"><a href="#!/environment_2">賀果獨有</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">環境特色</div>
+            <div class="message">獨棟建築，絕無外務干擾，鄰近靜巷，車輛可進入，交通方便，距離捷運站及高架橋不遠，出入安全，嚴格控管。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="environment_1">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">環境與設施</li>
+                <li class="link"><a href="#!/environment">環境特色</a></li>
+                <li class="link"><a href="#!/environment_1" class="active">設施遍覽</a></li>
+                <li class="link last"><a href="#!/environment_2">賀果獨有</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">設施遍覽</div>
+            <div class="message">獨立隱藏式冷暖變頻可控式空調，OSIM天王星按摩椅免費使用，美樂醫院專用型吸乳器，3M淨水器高規格飲水及蔬果梳洗，經皮黃測試儀，各種高規格設備，熟練的操作與維護，給媽媽最完善的規格跟待遇</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="environment_2">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">環境與設施</li>
+                <li class="link"><a href="#!/environment">環境特色</a></li>
+                <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
+                <li class="link last"><a href="#!/environment_2" class="active">賀果獨有</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">賀果獨有</div>
+            <div class="message">進口嬰兒五感啟發斑馬玩具，美國體操協會指定名床，YH109-1多角度紫外線殺菌燈，Mindrary全自動血壓血氧監視，各種有想法以及高規格設施，專門為媽媽和寶寶的身心健康所準備。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="food">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">賀果月子餐</li>
+                <li class="link"><a href="#!/food" class="active">玉膳房簡介</a></li>
+                <li class="link last"><a href="#!/food_1">餐點介紹</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">玉膳房簡介</div>
+            <div class="message">老字號月子餐中心，受到許多媽媽及報章媒體肯定，老闆每天親自採買新鮮食材，全程堅持採用養身月子水料理餐點，純正低溫烘培黑麻油，純米酒蒸餾米酒水，是賀果為媽媽健康把關的好夥伴。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="food_1">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">賀果月子餐</li>
+                <li class="link"><a href="#!/food">玉膳房簡介</a></li>
+                <li class="link last"><a href="#!/food_1" class="active">餐點介紹</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content">
+            <div class="header">餐點介紹</div>
+            <div class="message">耐高溫陶瓷容器，餐點採用進口專利耐高溫陶瓷碗，環保衛生不殘留異味。依個人體質提供客製化調理選擇，全程採用養生月子水料理餐點。純正低溫紅烘培黑麻油、純米酒蒸餾米酒、每天新鮮食材產地直送。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="room">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">房型與服務</li>
+                <li class="link"><a href="#!/room" class="active">招財房</a></li>
+                <li class="link"><a href="#!/room_1">進寶房</a></li>
+                <li class="link last"><a href="#!/room_2">納福房</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="room">
+            <div class="menu">
+                <ul>
+                    <li class="link"><a href="#!/vendor">共同設備</a></li>
+                    <li class="link"><a href="#!/service">賀果服務</a></li>
+                    <li class="link last"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
+            <div class="header">招財房</div>
+            <ul class="sub_menu">
+                <li><img src="images/room/1_1.jpg" width="100" /></li>
+                <li><img src="images/room/1_2.jpg" width="100" /></li>
+                <li><img src="images/room/1_3.jpg" width="100" style="margin-top: -50%" /></li>
+            </ul>
+            <div style="clear: both;"></div>
+            <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="room_1">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">房型與服務</li>
+                <li class="link"><a href="#!/room">招財房</a></li>
+                <li class="link"><a href="#!/room_1" class="active">進寶房</a></li>
+                <li class="link last"><a href="#!/room_2">納福房</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="room">
+            <div class="menu">
+                <ul>
+                    <li class="link"><a href="#!/vendor">共同設備</a></li>
+                    <li class="link"><a href="#!/service">賀果服務</a></li>
+                    <li class="link last"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
+            <div class="header">進寶房</div>
+            <ul class="sub_menu">
+                <li><img src="images/room/2_1.jpg" width="100" /></li>
+                <li><img src="images/room/2_2.jpg" width="100" /></li>
+                <li><img src="images/room/2_3.jpg" width="100" /></li>
+            </ul>
+            <div style="clear: both;"></div>
+            <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="room_2">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">房型與服務</li>
+                <li class="link"><a href="#!/room">招財房</a></li>
+                <li class="link"><a href="#!/room_1">進寶房</a></li>
+                <li class="link last"><a href="#!/room_2" class="active">納福房</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="room">
+            <div class="menu">
+                <ul>
+                    <li class="link"><a href="#!/vendor">共同設備</a></li>
+                    <li class="link"><a href="#!/service">賀果服務</a></li>
+                    <li class="link last"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
+            <div class="header">納福房</div>
+            <ul class="sub_menu">
+                <li><img src="images/room/3_1.jpg" width="100" /></li>
+                <li><img src="images/room/3_2.jpg" width="100" /></li>
+                <li><img src="images/room/3_3.jpg" width="100" /></li>
+            </ul>
+            <div style="clear: both;"></div>
+            <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="vendor">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">房型與服務</li>
+                <li class="link"><a href="#!/room">招財房</a></li>
+                <li class="link"><a href="#!/room_1">進寶房</a></li>
+                <li class="link last"><a href="#!/room_2">納福房</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="room">
+            <div class="menu">
+                <ul>
+                    <li class="link"><a href="#!/vendor" class="active">共同設備</a></li>
+                    <li class="link"><a href="#!/service">賀果服務</a></li>
+                    <li class="link last"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
+            <div class="header">共同設備</div>
+            <ul class="sub_menu">
+                <li><img src="images/room/vendor_1.jpg" width="100" /></li>
+                <li><img src="images/room/vendor_2.jpg" width="100" /></li>
+                <li><img src="images/room/vendor_3.jpg" width="100" /></li>
+            </ul>
+            <div style="clear: both;"></div>
+            <div class="message">房間裡除了雙人床，衣櫃，冰箱等設備外，也有免費的無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，安全設計浴室，美國體操協會獨立床(內裝獨立筒)，竹碳纖維防蹣的表層…等。</div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="service">
+    <div class="header">
+        <div class="menu">
+            <ul>
+                <li class="link_head">房型與服務</li>
+                <li class="link"><a href="#!/room">招財房</a></li>
+                <li class="link"><a href="#!/room_1">進寶房</a></li>
+                <li class="link last"><a href="#!/room_2">納福房</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <div class="room">
+            <div class="menu">
+                <ul>
+                    <li class="link"><a href="#!/vendor">共同設備</a></li>
+                    <li class="link"><a href="#!/service" class="active">賀果服務</a></li>
+                    <li class="link last"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
+            <div class="header">賀果服務</div>
+            <div style="clear: both;"></div>
+            <div class="message">每日更換乾淨衣物，給媽媽最大方便享受，而寶寶也有專業的照顧和安全的用品。此外小兒科醫師與婦產科醫師定期看診，賀果用全方位的照顧服務，讓媽媽得以無虞放鬆的靜養。</div>
+        </div>
+    </div>
+</script>
+
         <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js'></script>
         <script>
             window.jQuery || document.write("<script src='js/vendor/jquery-1.8.1.min.js'>\x3C/script>")
         </script>
+        <script src='js/vendor/jquery.ba-hashchange.min.js'></script>
         <script src='js/plugins.js'></script>
         <script src='js/script.js'></script>
         <script>
