@@ -15,6 +15,13 @@
             $('#main').html(templates[template_key]).show();
         });
     };
+    
+    var load_colorbox = function() {
+        $(".group1").colorbox({rel:'group1', transition:"none", width:"75%", height:"75%"});
+        $(".group2").colorbox({rel:'group2', transition:"none", width:"75%", height:"75%"});
+        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+        $(".group4").colorbox({rel:'group4', transition:"none", width:"75%", height:"75%"});
+    };
 
     $("script[type='text/x-mustache-template']").each(
         function (index, element) {
@@ -94,9 +101,10 @@
             default:
                 render('main', {'image': '01.jpg'});
         }
+        
+        load_colorbox();
     })
 
     // Trigger the event (useful on page load).
     $(window).hashchange();
-    //console.log(templates);
 }(jQuery));
