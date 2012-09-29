@@ -26,33 +26,28 @@
             <div id='main' role='main'></div>
             <footer>
                 <div id="footer">
-                    <div class="left"><a href="index.html"><img src="images/background/small_logo.png" alt="background image" /></a></div>
+                    <div class="left">賀果產後護理之家</div>
                     <div class="right">
-                        <div class="top">
-                            <div class="right_link">
-                                <ul>
-                                    <li class="mail"><a href="#!/contact">聯絡資訊與地圖</a></li>
-                                    <li class="facebook"><a href="#!/facebook">賀果粉絲團</a></li>
-                                </ul>
-                            </div>
-                            <div class="main_link right_2">
-                                <ul>
-                                    <li id="food"><a href="#!/food">賀果月子餐</a></li>
-                                    <!--
-                                    <li><a href="facebook.html">賀果粉絲團</a></li>
-                                    <li><a href="facebook.html">賀果粉絲團</a></li>
-                                    -->
-                                </ul>
-                            </div>
-                            <div class="main_link right_1">
-                                <ul>
-                                    <li id="about"><a href="#!/about/story">賀果的故事</a></li>
-                                    <li id="room"><a href="#!/room">房型與服務</a></li>
-                                    <li id="environment"><a href="#!/environment">環境與設施</a></li>
-                                </ul>
-                            </div>
+                        <div class="main_link right_1">
+                            <ul>
+                                <li id="about" class="first"><a href="#!/about/story">賀果的故事</a></li>
+                                <li id="room"><a href="#!/room">房型與服務</a></li>
+                                <li id="environment"><a href="#!/environment">環境與設施</a></li>
+                            </ul>
                         </div>
-                        <div class="bottom"><div class="text">WebDesign by Harry Yang. Pokai Wen</div></div>
+                        <div class="main_link right_2">
+                            <ul>
+                                <li id="food" class="first"><a href="#!/food">賀果月子餐</a></li>
+                                <li><a href="#">預留空間</a></li>
+                                <li><a href="#">預留空間</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_link">
+                            <ul>
+                                <li class="mail"><a href="#!/contact">聯絡資訊與地圖</a></li>
+                                <li class="facebook"><a href="#!/facebook">賀果粉絲團</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -60,7 +55,8 @@
 
 <script type="text/x-mustache-template" data-id="main">
     <div class="logo"><img src="images/background/logo.png" alt="background image" class="logo_bg" /></div>
-    <div class="header_text">賀果，細心守護您的美好。</div>
+    <div class="header_text header_position_1"><div>賀果</div></div>
+    <div class="header_text header_position_2"><div>細心守護您的美好。</div></div>
 </script>
 
 <script type="text/x-mustache-template" data-id="contact">
@@ -92,12 +88,14 @@
 <script type="text/x-mustache-template" data-id="about/story">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">賀果的故事</li>
-                <li class="link"><a href="#!/about/story" class="active">創辦人的話</a></li>
-                <li class="link"><a href="#!/about/company">賀果團隊</a></li>
-                <li class="link last"><a href="#!/about/quality">賀果品質</a></li>
-            </ul>
+            <div class="left">創辦人的話</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/about/story" class="active">創辦人的話</a></li>
+                    <li class="link"><a href="#!/about/company">賀果團隊</a></li>
+                    <li class="link"><a href="#!/about/quality">賀果品質</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -110,12 +108,14 @@
 <script type="text/x-mustache-template" data-id="about/company">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">賀果的故事</li>
-                <li class="link"><a href="#!/about/story">創辦人的話</a></li>
-                <li class="link"><a href="#!/about/company" class="active">賀果團隊</a></li>
-                <li class="link last"><a href="#!/about/quality">賀果品質</a></li>
-            </ul>
+            <div class="left">賀果的故事</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/about/story">創辦人的話</a></li>
+                    <li class="link"><a href="#!/about/company" class="active">賀果團隊</a></li>
+                    <li class="link"><a href="#!/about/quality">賀果品質</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -132,7 +132,7 @@
                 <li class="link_head">賀果的故事</li>
                 <li class="link"><a href="#!/about/story">創辦人的話</a></li>
                 <li class="link"><a href="#!/about/company">賀果團隊</a></li>
-                <li class="link last"><a href="#!/about/quality" class="active">賀果品質</a></li>
+                <li class="link"><a href="#!/about/quality" class="active">賀果品質</a></li>
             </ul>
         </div>
     </div>
@@ -151,7 +151,7 @@
                 <li class="link_head">環境與設施</li>
                 <li class="link"><a href="#!/environment" class="active">環境特色</a></li>
                 <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
-                <li class="link last"><a href="#!/environment_2">賀果獨有</a></li>
+                <li class="link"><a href="#!/environment_2">賀果獨有</a></li>
             </ul>
         </div>
     </div>
@@ -170,7 +170,7 @@
                 <li class="link_head">環境與設施</li>
                 <li class="link"><a href="#!/environment">環境特色</a></li>
                 <li class="link"><a href="#!/environment_1" class="active">設施遍覽</a></li>
-                <li class="link last"><a href="#!/environment_2">賀果獨有</a></li>
+                <li class="link"><a href="#!/environment_2">賀果獨有</a></li>
             </ul>
         </div>
     </div>
@@ -189,7 +189,7 @@
                 <li class="link_head">環境與設施</li>
                 <li class="link"><a href="#!/environment">環境特色</a></li>
                 <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
-                <li class="link last"><a href="#!/environment_2" class="active">賀果獨有</a></li>
+                <li class="link"><a href="#!/environment_2" class="active">賀果獨有</a></li>
             </ul>
         </div>
     </div>
@@ -207,7 +207,7 @@
             <ul>
                 <li class="link_head">賀果月子餐</li>
                 <li class="link"><a href="#!/food" class="active">玉膳房簡介</a></li>
-                <li class="link last"><a href="#!/food_1">餐點介紹</a></li>
+                <li class="link"><a href="#!/food_1">餐點介紹</a></li>
             </ul>
         </div>
     </div>
@@ -225,7 +225,7 @@
             <ul>
                 <li class="link_head">賀果月子餐</li>
                 <li class="link"><a href="#!/food">玉膳房簡介</a></li>
-                <li class="link last"><a href="#!/food_1" class="active">餐點介紹</a></li>
+                <li class="link"><a href="#!/food_1" class="active">餐點介紹</a></li>
             </ul>
         </div>
     </div>
@@ -244,7 +244,7 @@
                 <li class="link_head">房型與服務</li>
                 <li class="link"><a href="#!/room" class="active">招財房</a></li>
                 <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link last"><a href="#!/room_2">納福房</a></li>
+                <li class="link"><a href="#!/room_2">納福房</a></li>
             </ul>
         </div>
     </div>
@@ -254,7 +254,7 @@
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
                     <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link last"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
                 </ul>
             </div>
             <div class="header">招財房</div>
@@ -276,7 +276,7 @@
                 <li class="link_head">房型與服務</li>
                 <li class="link"><a href="#!/room">招財房</a></li>
                 <li class="link"><a href="#!/room_1" class="active">進寶房</a></li>
-                <li class="link last"><a href="#!/room_2">納福房</a></li>
+                <li class="link"><a href="#!/room_2">納福房</a></li>
             </ul>
         </div>
     </div>
@@ -286,7 +286,7 @@
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
                     <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link last"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
                 </ul>
             </div>
             <div class="header">進寶房</div>
@@ -308,7 +308,7 @@
                 <li class="link_head">房型與服務</li>
                 <li class="link"><a href="#!/room">招財房</a></li>
                 <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link last"><a href="#!/room_2" class="active">納福房</a></li>
+                <li class="link"><a href="#!/room_2" class="active">納福房</a></li>
             </ul>
         </div>
     </div>
@@ -318,7 +318,7 @@
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
                     <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link last"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
                 </ul>
             </div>
             <div class="header">納福房</div>
@@ -340,7 +340,7 @@
                 <li class="link_head">房型與服務</li>
                 <li class="link"><a href="#!/room">招財房</a></li>
                 <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link last"><a href="#!/room_2">納福房</a></li>
+                <li class="link"><a href="#!/room_2">納福房</a></li>
             </ul>
         </div>
     </div>
@@ -350,7 +350,7 @@
                 <ul>
                     <li class="link"><a href="#!/vendor" class="active">共同設備</a></li>
                     <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link last"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
                 </ul>
             </div>
             <div class="header">共同設備</div>
@@ -372,7 +372,7 @@
                 <li class="link_head">房型與服務</li>
                 <li class="link"><a href="#!/room">招財房</a></li>
                 <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link last"><a href="#!/room_2">納福房</a></li>
+                <li class="link"><a href="#!/room_2">納福房</a></li>
             </ul>
         </div>
     </div>
@@ -382,7 +382,7 @@
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
                     <li class="link"><a href="#!/service" class="active">賀果服務</a></li>
-                    <li class="link last"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
                 </ul>
             </div>
             <div class="header">賀果服務</div>
