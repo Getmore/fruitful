@@ -59,32 +59,6 @@
     <div class="header_text header_position_2"><div>細心守護您的美好。</div></div>
 </script>
 
-<script type="text/x-mustache-template" data-id="contact">
-    <div class="body contact">
-        <div class="left"><img src="images/map.png"></div>
-        <div class="right">
-            <div class="message">
-                <h3>聯絡資訊與地圖</h3>
-                <p>台北市中山區<br />新生北路三段11巷32號</p>
-                <p>中山國小站4號出口兩分鐘</p>
-                <p>請來電預約</p>
-                <p>02-2599-7111</p>
-                <p>0989-738-038</p>
-                <p>service@fruitful.com.tw</p>
-            </div>
-        </div>
-    </div>
-</script>
-
-<script type="text/x-mustache-template" data-id="facebook">
-    <div class="body facebook">
-        <div class="message">
-            <h3>賀果產後護理之家粉絲團</h3>
-            <p>加入粉絲團瞭解賀果的最新動態，也可以問有關賀果的問題喔。</p>
-            <p><a href="https://www.facebook.com/fruitful.com.tw"><img src="images/facebook.jpg" /></a></p>
-        </div>
-    </div>
-</script>
 <script type="text/x-mustache-template" data-id="about/story">
     <div class="header">
         <div class="menu">
@@ -101,10 +75,12 @@
     <div class="body">
         <div class="content">
             <div class="header">創辦人的話</div>
-            <div class="message">賀，象徵祝福和喜悅，果，代表新生和希望，為了和媽媽迎接有寶寶的未來，賀果的初衷就是建構一個不一樣的場域，不只是單純的養身，而更是養心和養品，感受由心出發，由美學和專業建構為底蘊的氛圍，賀果就是這樣有感覺的地方。</div>
+            <div class="message">賀，象徵祝福和喜悅，果，代表新生和希望，為了和媽媽迎接有寶寶的未來。</div>
+            <div class="message">賀果的初衷就是建構一個不一樣的場域，不只是單純的養身，而更是養心和養品，感受由心出發，由美學和專業建構為底蘊的氛圍，賀果就是這樣有感覺的地方。</div>
         </div>
     </div>
 </script>
+
 <script type="text/x-mustache-template" data-id="about/company">
     <div class="header">
         <div class="menu">
@@ -128,12 +104,14 @@
 <script type="text/x-mustache-template" data-id="about/quality">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">賀果的故事</li>
-                <li class="link"><a href="#!/about/story">創辦人的話</a></li>
-                <li class="link"><a href="#!/about/company">賀果團隊</a></li>
-                <li class="link"><a href="#!/about/quality" class="active">賀果品質</a></li>
-            </ul>
+            <div class="left">賀果的故事</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/about/story">創辦人的話</a></li>
+                    <li class="link"><a href="#!/about/company">賀果團隊</a></li>
+                    <li class="link"><a href="#!/about/quality" class="active">賀果品質</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -147,18 +125,31 @@
 <script type="text/x-mustache-template" data-id="environment">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">環境與設施</li>
-                <li class="link"><a href="#!/environment" class="active">環境特色</a></li>
-                <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
-                <li class="link"><a href="#!/environment_2">賀果獨有</a></li>
-            </ul>
+            <div class="left">環境與設施</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/environment" class="active">環境特色</a></li>
+                    <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
+                    <li class="link"><a href="#!/environment_2">賀果獨有</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
     <div class="body">
-        <div class="content">
-            <div class="header">環境特色</div>
-            <div class="message">獨棟建築，絕無外務干擾，鄰近靜巷，車輛可進入，交通方便，距離捷運站及高架橋不遠，出入安全，嚴格控管。</div>
+        <div class="room">
+            <div class="blank">&nbsp;</div>
+            <div class="content">
+                <div class="header_menu"><span>環境特色</span></div>
+                <ul class="image_menu">
+                    <li><a href="images/room/3_1.jpg" class="group5" title="環境特色-1"><img src="images/room/3_1.jpg" width="100" /></a></li>
+                    <li><a href="images/room/3_2.jpg" class="group5" title="環境特色-2"><img src="images/room/3_2.jpg" width="100" /></a></li>
+                    <li><a href="images/room/3_3.jpg" class="group5" title="環境特色-3"><img src="images/room/3_3.jpg" width="100" /></a></li>
+                    <li><a href="images/room/3_2.jpg" class="group5" title="環境特色-4"><img src="images/room/3_2.jpg" width="100" /></a></li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="message">獨棟建築，絕無外務干擾，鄰近靜巷，車輛可進入，交通方便，距離捷運站及高架橋不遠，出入安全，嚴格控管。</div>
+            </div>
         </div>
     </div>
 </script>
@@ -166,12 +157,14 @@
 <script type="text/x-mustache-template" data-id="environment_1">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">環境與設施</li>
-                <li class="link"><a href="#!/environment">環境特色</a></li>
-                <li class="link"><a href="#!/environment_1" class="active">設施遍覽</a></li>
-                <li class="link"><a href="#!/environment_2">賀果獨有</a></li>
-            </ul>
+            <div class="left">環境與設施</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/environment">環境特色</a></li>
+                    <li class="link"><a href="#!/environment_1" class="active">設施遍覽</a></li>
+                    <li class="link"><a href="#!/environment_2">賀果獨有</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -185,12 +178,14 @@
 <script type="text/x-mustache-template" data-id="environment_2">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">環境與設施</li>
-                <li class="link"><a href="#!/environment">環境特色</a></li>
-                <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
-                <li class="link"><a href="#!/environment_2" class="active">賀果獨有</a></li>
-            </ul>
+            <div class="left">環境與設施</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/environment">環境特色</a></li>
+                    <li class="link"><a href="#!/environment_1">設施遍覽</a></li>
+                    <li class="link"><a href="#!/environment_2" class="active">賀果獨有</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -204,11 +199,14 @@
 <script type="text/x-mustache-template" data-id="food">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">賀果月子餐</li>
-                <li class="link"><a href="#!/food" class="active">玉膳房簡介</a></li>
-                <li class="link"><a href="#!/food_1">餐點介紹</a></li>
-            </ul>
+            <div class="left">賀果月子餐</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/food" class="active">賀果主廚</a></li>
+                    <li class="link"><a href="#!/food_1">賀果菜單</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -222,11 +220,14 @@
 <script type="text/x-mustache-template" data-id="food_1">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">賀果月子餐</li>
-                <li class="link"><a href="#!/food">玉膳房簡介</a></li>
-                <li class="link"><a href="#!/food_1" class="active">餐點介紹</a></li>
-            </ul>
+            <div class="left">賀果月子餐</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/food">賀果主廚</a></li>
+                    <li class="link"><a href="#!/food_1" class="active">賀果菜單</a></li>
+                    <li class="link"><a href="#">預留服務</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
@@ -240,31 +241,36 @@
 <script type="text/x-mustache-template" data-id="room">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">房型與服務</li>
-                <li class="link"><a href="#!/room" class="active">招財房</a></li>
-                <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link"><a href="#!/room_2">納福房</a></li>
-            </ul>
+            <div class="left">房型與服務</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/room" class="active">招財房</a></li>
+                    <li class="link"><a href="#!/room_1">進寶房</a></li>
+                    <li class="link"><a href="#!/room_2">納福房</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="room">
+            <div class="blank">&nbsp;</div>
             <div class="menu">
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
-                    <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#!/service">媽媽照護</a></li>
+                    <li class="link"><a href="#!/boby_service">新生兒照護</a></li>
                 </ul>
             </div>
-            <div class="header">招財房</div>
-            <ul class="sub_menu">
-                <li><a href="images/room/1_1.jpg" class="group1" title="招財房-1"><img src="images/room/1_1.jpg" width="100" /></a></li>
-                <li><a href="images/room/1_2.jpg" class="group1" title="招財房-2"><img src="images/room/1_2.jpg" width="100" /></a></li>
-                <li><a href="images/room/1_3.jpg" class="group1" title="招財房-3"><img src="images/room/1_3.jpg" width="100" style="margin-top: -50%" /></a></li>
-            </ul>
-            <div style="clear: both;"></div>
-            <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+            <div class="content">
+                <div class="header_menu"><span>招財房</span></div>
+                <ul class="image_menu">
+                    <li><a href="images/room/1_1.jpg" class="group1" title="招財房-1"><img src="images/room/1_1.jpg" height="60" /></a></li>
+                    <li><a href="images/room/1_2.jpg" class="group1" title="招財房-2"><img src="images/room/1_2.jpg" height="60" /></a></li>
+                    <li><a href="images/room/1_3.jpg" class="group1" title="招財房-3"><img src="images/room/1_3.jpg" width="60" /></a></li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+            </div>
         </div>
     </div>
 </script>
@@ -272,31 +278,36 @@
 <script type="text/x-mustache-template" data-id="room_1">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">房型與服務</li>
-                <li class="link"><a href="#!/room">招財房</a></li>
-                <li class="link"><a href="#!/room_1" class="active">進寶房</a></li>
-                <li class="link"><a href="#!/room_2">納福房</a></li>
-            </ul>
+            <div class="left">房型與服務</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/room">招財房</a></li>
+                    <li class="link"><a href="#!/room_1" class="active">進寶房</a></li>
+                    <li class="link"><a href="#!/room_2">納福房</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="room">
+            <div class="blank">&nbsp;</div>
             <div class="menu">
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
-                    <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#!/service">媽媽照護</a></li>
+                    <li class="link"><a href="#!/boby_service">新生兒照護</a></li>
                 </ul>
             </div>
-            <div class="header">進寶房</div>
-            <ul class="sub_menu">
-                <li><a href="images/room/2_1.jpg" class="group2" title="進寶房-1"><img src="images/room/2_1.jpg" width="100" /></a></li>
-                <li><a href="images/room/2_2.jpg" class="group2" title="進寶房-2"><img src="images/room/2_2.jpg" width="100" /></a></li>
-                <li><a href="images/room/2_3.jpg" class="group2" title="進寶房-3"><img src="images/room/2_3.jpg" width="100" /></a></li>
-            </ul>
-            <div style="clear: both;"></div>
-            <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+            <div class="content">
+                <div class="header_menu"><span>進寶房</span></div>
+                <ul class="image_menu">
+                    <li><a href="images/room/2_1.jpg" class="group2" title="進寶房-1"><img src="images/room/2_1.jpg" height="60" /></a></li>
+                    <li><a href="images/room/2_2.jpg" class="group2" title="進寶房-2"><img src="images/room/2_2.jpg" height="60" /></a></li>
+                    <li><a href="images/room/2_3.jpg" class="group2" title="進寶房-3"><img src="images/room/2_3.jpg" height="60" /></a></li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+            </div>
         </div>
     </div>
 </script>
@@ -304,31 +315,36 @@
 <script type="text/x-mustache-template" data-id="room_2">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">房型與服務</li>
-                <li class="link"><a href="#!/room">招財房</a></li>
-                <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link"><a href="#!/room_2" class="active">納福房</a></li>
-            </ul>
+            <div class="left">房型與服務</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/room">招財房</a></li>
+                    <li class="link"><a href="#!/room_1">進寶房</a></li>
+                    <li class="link"><a href="#!/room_2" class="active">納福房</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="room">
+            <div class="blank">&nbsp;</div>
             <div class="menu">
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
-                    <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#!/service">媽媽照護</a></li>
+                    <li class="link"><a href="#!/boby_service">新生兒照護</a></li>
                 </ul>
             </div>
-            <div class="header">納福房</div>
-            <ul class="sub_menu">
-                <li><a href="images/room/3_1.jpg" class="group3" title="納福房-1"><img src="images/room/3_1.jpg" width="100" /></a></li>
-                <li><a href="images/room/3_2.jpg" class="group3" title="納福房-2"><img src="images/room/3_2.jpg" width="100" /></a></li>
-                <li><a href="images/room/3_3.jpg" class="group3" title="納福房-3"><img src="images/room/3_3.jpg" width="100" /></a></li>
-            </ul>
-            <div style="clear: both;"></div>
-            <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+            <div class="content">
+                <div class="header_menu"><span>納福房</span></div>
+                <ul class="image_menu">
+                    <li><a href="images/room/3_1.jpg" class="group3" title="納福房-1"><img src="images/room/3_1.jpg" width="100" /></a></li>
+                    <li><a href="images/room/3_2.jpg" class="group3" title="納福房-2"><img src="images/room/3_2.jpg" width="100" /></a></li>
+                    <li><a href="images/room/3_3.jpg" class="group3" title="納福房-3"><img src="images/room/3_3.jpg" width="100" /></a></li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="message">大而方正的招才房，以財源廣進為寓意，雙人床、衣櫃、冰箱等基本起居設備，免費無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，也附設奶瓶消毒鍋等嬰兒照顧用品。</div>
+            </div>
         </div>
     </div>
 </script>
@@ -336,31 +352,36 @@
 <script type="text/x-mustache-template" data-id="vendor">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">房型與服務</li>
-                <li class="link"><a href="#!/room">招財房</a></li>
-                <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link"><a href="#!/room_2">納福房</a></li>
-            </ul>
+            <div class="left">房型與服務</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/room">招財房</a></li>
+                    <li class="link"><a href="#!/room_1">進寶房</a></li>
+                    <li class="link"><a href="#!/room_2">納福房</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="room">
+            <div class="blank">&nbsp;</div>
             <div class="menu">
                 <ul>
                     <li class="link"><a href="#!/vendor" class="active">共同設備</a></li>
-                    <li class="link"><a href="#!/service">賀果服務</a></li>
-                    <li class="link"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#!/service">媽媽照護</a></li>
+                    <li class="link"><a href="#!/boby_service">新生兒照護</a></li>
                 </ul>
             </div>
-            <div class="header">共同設備</div>
-            <ul class="sub_menu">
-                <li><a href="images/room/vendor_1.jpg" class="group4" title="共同設備-1"><img src="images/room/vendor_1.jpg" width="100" /></a></li>
-                <li><a href="images/room/vendor_2.jpg" class="group4" title="共同設備-2"><img src="images/room/vendor_2.jpg" width="100" /></a></li>
-                <li><a href="images/room/vendor_3.jpg" class="group4" title="共同設備-3"><img src="images/room/vendor_3.jpg" width="100" /></a></li>
-            </ul>
-            <div style="clear: both;"></div>
-            <div class="message">房間裡除了雙人床，衣櫃，冰箱等設備外，也有免費的無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，安全設計浴室，美國體操協會獨立床(內裝獨立筒)，竹碳纖維防蹣的表層…等。</div>
+            <div class="content">
+                <div class="header_menu"><span>共同設備</span></div>
+                <ul class="image_menu">
+                    <li><a href="images/room/vendor_1.jpg" class="group4" title="共同設備-1"><img src="images/room/vendor_1.jpg" width="60" /></a></li>
+                    <li><a href="images/room/vendor_2.jpg" class="group4" title="共同設備-2"><img src="images/room/vendor_2.jpg" width="60" /></a></li>
+                    <li><a href="images/room/vendor_3.jpg" class="group4" title="共同設備-3"><img src="images/room/vendor_3.jpg" height="60" /></a></li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="message">房間裡除了雙人床，衣櫃，冰箱等設備外，也有免費的無限寬頻上網，乾濕分離浴廁，TOTO自動電腦免治馬桶，安全設計浴室，美國體操協會獨立床(內裝獨立筒)，竹碳纖維防蹣的表層…等。</div>
+            </div>
         </div>
     </div>
 </script>
@@ -368,26 +389,91 @@
 <script type="text/x-mustache-template" data-id="service">
     <div class="header">
         <div class="menu">
-            <ul>
-                <li class="link_head">房型與服務</li>
-                <li class="link"><a href="#!/room">招財房</a></li>
-                <li class="link"><a href="#!/room_1">進寶房</a></li>
-                <li class="link"><a href="#!/room_2">納福房</a></li>
-            </ul>
+            <div class="left">房型與服務</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/room">招財房</a></li>
+                    <li class="link"><a href="#!/room_1">進寶房</a></li>
+                    <li class="link"><a href="#!/room_2">納福房</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="room">
+            <div class="blank">&nbsp;</div>
             <div class="menu">
                 <ul>
                     <li class="link"><a href="#!/vendor">共同設備</a></li>
-                    <li class="link"><a href="#!/service" class="active">賀果服務</a></li>
-                    <li class="link"><a href="#">預留服務</a></li>
+                    <li class="link"><a href="#!/service" class="active">媽媽照護</a></li>
+                    <li class="link"><a href="#!/boby_service">新生兒照護</a></li>
                 </ul>
             </div>
-            <div class="header">賀果服務</div>
-            <div style="clear: both;"></div>
-            <div class="message">每日更換乾淨衣物，給媽媽最大方便享受，而寶寶也有專業的照顧和安全的用品。此外小兒科醫師與婦產科醫師定期看診，賀果用全方位的照顧服務，讓媽媽得以無虞放鬆的靜養。</div>
+            <div class="content">
+                <div class="header_menu"><span>媽媽照護</span></div>
+                <div style="clear: both;"></div>
+                <div class="message">每日更換乾淨衣物，給媽媽最大方便享受，而寶寶也有專業的照顧和安全的用品。此外小兒科醫師與婦產科醫師定期看診，賀果用全方位的照顧服務，讓媽媽得以無虞放鬆的靜養。</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="boby_service">
+    <div class="header">
+        <div class="menu">
+            <div class="left">房型與服務</div>
+            <div class="right">
+                <ul>
+                    <li class="link"><a href="#!/room">招財房</a></li>
+                    <li class="link"><a href="#!/room_1">進寶房</a></li>
+                    <li class="link"><a href="#!/room_2">納福房</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="room">
+            <div class="blank">&nbsp;</div>
+            <div class="menu">
+                <ul>
+                    <li class="link"><a href="#!/vendor">共同設備</a></li>
+                    <li class="link"><a href="#!/service">媽媽照護</a></li>
+                    <li class="link"><a href="#!/boby_service" class="active">新生兒照護</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="header_menu"><span>新生兒照護</span></div>
+                <div style="clear: both;"></div>
+                <div class="message">每日更換乾淨衣物，給媽媽最大方便享受，而寶寶也有專業的照顧和安全的用品。此外小兒科醫師與婦產科醫師定期看診，賀果用全方位的照顧服務，讓媽媽得以無虞放鬆的靜養。</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="contact">
+    <div class="contact">
+        <div class="left"><img src="images/map.png"></div>
+        <div class="right">
+            <div class="message">
+                <h3>聯絡資訊與地圖</h3>
+                <p>台北市中山區<br />新生北路三段11巷32號</p>
+                <p>中山國小站4號出口<br />兩分鐘</p>
+                <p>請來電預約</p>
+                <p>02-2599-7111</p>
+                <p>0989-738-038</p>
+                <p>service@fruitful.com.tw</p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-mustache-template" data-id="facebook">
+    <div class="facebook_page">
+        <div class="message">
+            <p>賀果產後護理之家粉絲團</p>
+            <p>加入粉絲團瞭解賀果的最新動態，也可以問有關賀果的問題喔。</p>
+            <p>&nbsp;</p>
+            <p><a href="https://www.facebook.com/fruitful.com.tw"><img src="images/facebook.jpg" /></a></p>
         </div>
     </div>
 </script>

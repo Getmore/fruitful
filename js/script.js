@@ -11,16 +11,20 @@
         if (data.image != undefined) {
             $('#bg').attr('src', 'images/background/' + data.image);
         }
-        $('#main').hide(0, function(){
-            $('#main').html(templates[template_key]).show();
+        $('#main').hide(500, function(){
+            $('#main').html(templates[template_key]).show(500, function() {
+                load_colorbox();
+                load_css();
+            });
         });
     };
 
     var load_colorbox = function() {
-        $(".group1").colorbox({rel:'group1', transition:"none", width:"75%", height:"75%"});
-        $(".group2").colorbox({rel:'group2', transition:"none", width:"75%", height:"75%"});
-        $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-        $(".group4").colorbox({rel:'group4', transition:"none", width:"75%", height:"75%"});
+        $(".group1").colorbox({rel:'group1', transition:"none"});
+        $(".group2").colorbox({rel:'group2', transition:"none"});
+        $(".group3").colorbox({rel:'group3', transition:"none"});
+        $(".group4").colorbox({rel:'group4', transition:"none"});
+        $(".group5").colorbox({rel:'group5', transition:"none"});
     };
 
     $("script[type='text/x-mustache-template']").each(
@@ -98,62 +102,73 @@
                 render('service', {'image': '16.jpg'});
                 $('#room').addClass('active');
             break;
+            case '#!/boby_service':
+                render('boby_service', {'image': '16.jpg'});
+                $('#room').addClass('active');
+            break;
             default:
                 render('main', {'image': '01.jpg'});
         }
-
-        load_colorbox();
-        load_css();
     })
 
-/**
- * define css
- */
-var load_css = function () {
-    var footer_height = $(document).height() * 16 / 100;
-    var footer_top = footer_height * 12.5 / 100;
-    var main_link_height = (footer_height - footer_top * 4)/3;
+    /**
+     * define css
+     */
+    var load_css = function () {
+        var footer_height = $(document).height() * 16 / 100;
+        var footer_top = footer_height * 12.5 / 100;
+        var main_link_height = (footer_height - footer_top * 4)/3;
 
-    var contact_link_height = footer_height * 31.2 / 100;
-    var facebook_link_height = footer_height * 43.72 / 100;
+        var contact_link_height = footer_height * 31.2 / 100;
+        var facebook_link_height = footer_height * 43.72 / 100;
 
-    var header_text_height = $(document).height() * 7 / 100;
-    var menu_text_height = $(document).height() * 6 / 100;
-    var menu_ul_height = $(".menu ul li").height();
-    var menu_ul_height_top = (menu_text_height - menu_ul_height)/2;
+        var header_text_height = $(document).height() * 7 / 100;
+        var menu_text_height = $(document).height() * 6 / 100;
+        var menu_ul_height = $(".menu ul li").height();
+        var menu_ul_height_top = (menu_text_height - menu_ul_height)/2;
 
-    $(".header_text div").css({
-        'height': header_text_height + 'px',
-        'line-height': header_text_height + 'px'
-    });
+        $(".header_text div").css({
+            'height': header_text_height + 'px',
+            'line-height': header_text_height + 'px'
+        });
 
-    $(".menu .left").css({
-        'height': menu_text_height + 'px',
-        'line-height': menu_text_height + 'px'
-    });
-    $(".menu ul").css({
-        'padding-top': menu_ul_height_top + 'px'
-    });
+        $(".menu .left").css({
+            'height': menu_text_height + 'px',
+            'line-height': menu_text_height + 'px'
+        });
 
-    $("#footer ul li").css({
-        'margin-top': footer_top + 'px'
-    });
-    $(".main_link ul li").css({
-        'height': main_link_height + 'px',
-        'line-height': main_link_height + 'px'
-    });
-    $("#footer .left").css({
-        'line-height': footer_height + 'px'
-    });
-    $(".mail").css({
-        'height': contact_link_height + 'px',
-        'line-height': contact_link_height + 'px'
-    });
-    $(".facebook").css({
-        'height': facebook_link_height + 'px',
-        'line-height': facebook_link_height + 'px'
-    });
-};
+        $(".menu ul").css({
+            'padding-top': menu_ul_height_top + 'px'
+        });
+
+        // room sub menu
+        $(".room .menu").css({
+            'height': menu_text_height + 'px'
+        });
+
+        $(".room .menu ul").css({
+            'padding-top': menu_ul_height_top + 'px'
+        });
+
+        $("#footer ul li").css({
+            'margin-top': footer_top + 'px'
+        });
+        $(".main_link ul li").css({
+            'height': main_link_height + 'px',
+            'line-height': main_link_height + 'px'
+        });
+        $("#footer .left").css({
+            'line-height': footer_height + 'px'
+        });
+        $(".mail").css({
+            'height': contact_link_height + 'px',
+            'line-height': contact_link_height + 'px'
+        });
+        $(".facebook").css({
+            'height': facebook_link_height + 'px',
+            'line-height': facebook_link_height + 'px'
+        });
+    };
 
     // Trigger the event (useful on page load).
     $(window).hashchange();
