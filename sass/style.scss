@@ -305,7 +305,7 @@ img {
         width: 76%;
         .main_link {
             float: left;
-            width: 10.52%;
+            width: 12.52%;
             ul {
                 list-style-type: none;
                 li {
@@ -313,10 +313,9 @@ img {
                         text-decoration: none;
                         color: #000;
                     }
-
                     font-size: 14pt;
                     color: #000;
-                    letter-spacing: 6px;
+                    letter-spacing: 4px;
                     &:first-child {
                         margin-top: 0px;
                     }
@@ -335,7 +334,7 @@ img {
             }
         }
         .right_1 {
-            margin-right: 15.78%;
+            margin-right: 13.78%;
         }
         .right_link {
             float: right;
@@ -369,3 +368,5 @@ img {
         }
     }
 }
+
+

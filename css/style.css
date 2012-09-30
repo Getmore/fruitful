@@ -630,13 +630,13 @@ img.bg {
     width: 76%; }
     #footer .right .main_link {
       float: left;
-      width: 10.52%; }
+      width: 12.52%; }
       #footer .right .main_link ul {
         list-style-type: none; }
         #footer .right .main_link ul li {
           font-size: 14pt;
           color: #000;
-          letter-spacing: 6px; }
+          letter-spacing: 4px; }
           #footer .right .main_link ul li a {
             text-decoration: none;
             color: #000; }
@@ -651,7 +651,7 @@ img.bg {
             background: url("../images/icon/item.png") repeat-y right center;
             color: #736357; }
     #footer .right .right_1 {
-      margin-right: 15.78%; }
+      margin-right: 13.78%; }
     #footer .right .right_link {
       float: right;
       width: 31.5%; }
