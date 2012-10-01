@@ -240,7 +240,7 @@ img {
     @include opacity(0.9);
     .left {
         float: left;
-        width: 71%;
+        width: 70%;
         height: 100%;
         text-align: center;
         img {
@@ -251,12 +251,12 @@ img {
         position: absolute;
         right: 2%;
         bottom: 3%;
-        width: 27.5%;
+        width: 30%;
         height: 93.75%;
         background-color: #6A9438;
         color: #fff;
         .message {
-            padding: 20px 40px;
+            padding: 20px 20px;
             h3 {
                 font-size: 12pt;
                 padding: 10px 0;
