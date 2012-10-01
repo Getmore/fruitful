@@ -2,6 +2,13 @@
 @import "compass/reset";
 @import "compass/css3";
 
+$letter-spacing-message: 4px;
+$menu-width: 30%;
+
+body {
+    font-family:"微軟正黑體","Microsoft JhengHei","Helvetica Neue","Arial","Trebuchet MS","Helvetica","Verdana","sans-serif";
+}
+
 img {
     &.bg {
         /* Set rules to fill background */
@@ -44,7 +51,8 @@ img {
     padding-left: 6%;
     @include opacity(0.90);
     div {
-        font-size: 21pt;
+        font-size: 16pt;
+        letter-spacing: $letter-spacing-message;
         color: #fff;
     }
 }
@@ -77,10 +85,10 @@ img {
         height: 30%;
         .left {
             float: left;
-            font-size: 18pt;
+            font-size: 13.5pt;
             text-align: center;
             width: 28.12%;
-            letter-spacing: 6px;
+            letter-spacing: $letter-spacing-message;
         }
         .right {
             float: right;
@@ -91,10 +99,10 @@ img {
             list-style-type: none;
             li {
                 letter-spacing: 6px;
-                font-size: 18pt;
+                font-size: 13.5pt;
                 text-align: left;
                 float: left;
-                width: 32%;
+                width: $menu-width;
                 &.link {
                     border-left: 2px solid #534741;
                     padding-left: 5px;
@@ -124,24 +132,26 @@ img {
         padding-left: 13.04%;
         .header {
             position: relative;
-            font-size: 18pt;
+            font-size: 13.5pt;
             padding-top: 10%;
             padding-bottom: 10%;
+            letter-spacing: $letter-spacing-message;
         }
         .message {
-            font-size: 14pt;
+            font-size: 10.5pt;
             color: #1A1A1A;
             padding-right: 50px;
             line-height: 40px;
+            letter-spacing: $letter-spacing-message;
         }
     }
     .room {
-        background-color: #fff;
         min-height: 100%;
-
+        height: 100%;
         .blank {
             height: 12px;
             width: 100%;
+            background-color: #fff;
             @include opacity(0.80);
         }
         .menu {
@@ -151,11 +161,11 @@ img {
             ul {
                 list-style-type: none;
                 li {
-                    letter-spacing: 6px;
-                    font-size: 18pt;
+                    letter-spacing: $letter-spacing-message;
+                    font-size: 13.5pt;
                     text-align: left;
                     float: left;
-                    width: 32%;
+                    width: $menu-width;
                     &.link {
                         border-left: 2px solid #534741;
                         padding-left: 5px;
@@ -175,11 +185,15 @@ img {
             padding-top: 3%;
             padding-right: 3%;
             padding-left: 13.04%;
+            height: 100%;
+            min-height: 100%;
+            background-color: #fff;
+            @include opacity(0.80);
         }
         .header_menu {
             position: relative;
             float:left;
-            font-size: 18pt;
+            font-size: 13.5pt;
             height: 56px;
             text-align: left;
             width: 150px;
@@ -188,6 +202,7 @@ img {
             span {
                 position: absolute;
                 bottom: 0;
+                letter-spacing: $letter-spacing-message;
             }
         }
         ul.image_menu {
@@ -203,9 +218,10 @@ img {
             }
         }
         .message {
-            font-size: 14pt;
+            font-size: 10.5pt;
             padding-top: 10%;
             line-height: 40px;
+            letter-spacing: $letter-spacing-message;
         }
     }
 }
@@ -225,26 +241,32 @@ img {
     .left {
         float: left;
         width: 71%;
-        min-height: 100%;
+        height: 100%;
         text-align: center;
+        img {
+            vertical-align: middle;
+        }
     }
     .right {
         position: absolute;
         right: 2%;
-        bottom: 2%;
+        bottom: 3%;
         width: 27.5%;
-        height: 89%;
+        height: 93.75%;
         background-color: #6A9438;
         color: #fff;
         .message {
             padding: 20px 40px;
             h3 {
-                font-size: 16pt;
+                font-size: 12pt;
                 padding: 10px 0;
+                letter-spacing: $letter-spacing-message;
             }
             p {
-                font-size: 14pt;
-                padding: 10px 0;
+                font-size: 10pt;
+                padding: 5px 0;
+                line-height: 30px;
+                letter-spacing: $letter-spacing-message;
             }
         }
     }
@@ -261,14 +283,16 @@ img {
     width: 29%;
     height: 55%;
     padding-left: 6%;
-    background-color: #000;
-    @include opacity(0.5);
+    background-color: #222;
+    @include opacity(0.9);
     .message {
         color: #fff;
         padding-top: 36%;
         p {
-            font-size: 14pt;
-            padding-bottom: 20px;
+            font-size: 10.5pt;
+            padding-bottom: 10px;
+            line-height: 30px;
+            letter-spacing: $letter-spacing-message;
         }
     }
 }
@@ -291,10 +315,11 @@ img {
         height: 100%;
         background-color: #6A9438;
         text-align: center;
-        font-size: 16pt;
+        font-size: 12pt;
         color: #fff;
-        letter-spacing: 6px;
+        letter-spacing: $letter-spacing-message;
         @include opacity(0.90);
+        cursor: pointer;
     }
 
     .right {
@@ -310,9 +335,9 @@ img {
                         text-decoration: none;
                         color: #000;
                     }
-                    font-size: 14pt;
+                    font-size: 10.5pt;
                     color: #000;
-                    letter-spacing: 4px;
+                    letter-spacing: $letter-spacing-message;
                     &:first-child {
                         margin-top: 0px;
                     }
@@ -320,11 +345,11 @@ img {
                         margin-top: 0px;
                     }
                     &.active {
-                        background: url('../images/icon/item.png') repeat-y right center;
+                        background: url('../images/icon/item.png') no-repeat right center;
                         color: #736357;
                     }
                     &:hover {
-                        background: url('../images/icon/item.png') repeat-y right center;
+                        background: url('../images/icon/item.png') no-repeat right center;
                         color: #736357;
                     }
                 }
@@ -339,9 +364,9 @@ img {
             ul {
                 list-style-type: none;
                 li {
-                    font-size: 14pt;
+                    font-size: 11pt;
                     color: #fff;
-                    letter-spacing: 4px;
+                    letter-spacing: $letter-spacing-message;
                     padding-left: 40px;
                     &.mail {
                         background: #C69C6D url('../images/icon/mail.png') no-repeat 8px center;
