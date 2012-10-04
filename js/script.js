@@ -3,6 +3,7 @@
 // Functions to run even before DOMReady that required jQuery
 (function($) {
 
+    var initial = false;
     var templates = {};
 
     var render = function(template_key, data) {
@@ -10,11 +11,19 @@
             if (data.image != undefined) {
                 $('#bg').attr('src', 'images/background/' + data.image);
             }
-            $('#main').hide(500, function() {
-                $('#main').html(templates[template_key]).show(500, function() {
+            $('#main').hide(500, function(){
+                $(".block").show();
+                $('#main').html(templates[template_key]).show(0, function() {
                     load_colorbox();
                     load_css();
                 });
+                $(".block").hide(0);
+                if (initial) {
+                    initial = false;
+                    $(".block").css({
+                        'height': '86%'
+                    });
+                }
             });
         };
 
