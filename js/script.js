@@ -177,9 +177,17 @@
             var menu_ul_height = $(".menu ul li").height();
             var menu_ul_height_top = (menu_text_height - menu_ul_height) / 2;
 
+            var contact_left_width = $(".contact .left").width();
             var contact_left_height = $(".contact .left").height();
-            var contact_left_image_height = $(".contact .left img").height();
+            var contact_left_image_width = '497';
+            var contact_left_image_height = '397';
             var contact_left_margin_top = (contact_left_height - contact_left_image_height) / 2;
+
+            if (contact_left_image_width > contact_left_width) {
+                contact_left_image_height = contact_left_image_height * (contact_left_width / contact_left_image_width);
+                contact_left_image_width = contact_left_width;
+                contact_left_margin_top = (contact_left_height - contact_left_image_height) / 2;
+            }
 
             $(".header_text div").css({
                 'height': header_text_height + 'px',
