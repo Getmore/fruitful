@@ -187,6 +187,8 @@
                 contact_left_image_height = contact_left_image_height * (contact_left_width / contact_left_image_width);
                 contact_left_image_width = contact_left_width;
                 contact_left_margin_top = (contact_left_height - contact_left_image_height) / 2;
+                $("#map").css('width', contact_left_image_width + 'px');
+                $("#map").css('height', contact_left_image_height + 'px');
             }
 
             $(".header_text div").css({

@@ -584,7 +584,9 @@ img.bg {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9; }
   .contact .left {
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 68%;
     height: 100%;
     text-align: center; }
