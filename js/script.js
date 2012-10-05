@@ -76,42 +76,42 @@
             break;
         case '#!/contact':
             render('contact', {
-                'image': '10.jpg'
+                'image': '02.jpg'
             });
             break;
         case '#!/facebook':
             render('facebook', {
-                'image': '11.jpg'
+                'image': '03.jpg'
             });
             break;
         case '#!/about/story':
             render('about/story', {
-                'image': '02.jpg'
+                'image': '13.jpg'
             });
             break;
         case '#!/about/company':
             render('about/company', {
-                'image': '03.jpg'
+                'image': '15.jpg'
             });
             break;
         case '#!/about/quality':
             render('about/quality', {
-                'image': '04.jpg'
+                'image': '14.jpg'
             });
             break;
         case '#!/environment':
             render('environment', {
-                'image': '05.jpg'
+                'image': '18.jpg'
             });
             break;
         case '#!/environment_1':
             render('environment_1', {
-                'image': '06.jpg'
+                'image': '16.jpg'
             });
             break;
         case '#!/environment_2':
             render('environment_2', {
-                'image': '07.jpg'
+                'image': '17.jpg'
             });
             break;
         case '#!/food':
@@ -126,32 +126,32 @@
             break;
         case '#!/room':
             render('room', {
-                'image': '12.jpg'
+                'image': '06.jpg'
             });
             break;
         case '#!/room_1':
             render('room_1', {
-                'image': '13.jpg'
+                'image': '07.jpg'
             });
             break;
         case '#!/room_2':
             render('room_2', {
-                'image': '14.jpg'
+                'image': '08.jpg'
             });
             break;
         case '#!/vendor':
             render('vendor', {
-                'image': '15.jpg'
+                'image': '05.jpg'
             });
             break;
         case '#!/service':
             render('service', {
-                'image': '16.jpg'
+                'image': '09.jpg'
             });
             break;
         case '#!/boby_service':
             render('boby_service', {
-                'image': '16.jpg'
+                'image': '10.jpg'
             });
             break;
         default:
