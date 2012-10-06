@@ -86,72 +86,72 @@
             break;
         case '#!/about/story':
             render('about/story', {
-                'image': '13.jpg'
+                'image': '06.jpg'
             });
             break;
         case '#!/about/company':
             render('about/company', {
-                'image': '15.jpg'
+                'image': '07.jpg'
             });
             break;
         case '#!/about/quality':
             render('about/quality', {
-                'image': '14.jpg'
+                'image': '08.jpg'
             });
             break;
         case '#!/environment':
             render('environment', {
-                'image': '18.jpg'
+                'image': '09.jpg'
             });
             break;
         case '#!/environment_1':
             render('environment_1', {
-                'image': '16.jpg'
+                'image': '10.jpg'
             });
             break;
         case '#!/environment_2':
             render('environment_2', {
-                'image': '17.jpg'
+                'image': '11.jpg'
             });
             break;
         case '#!/food':
             render('food', {
-                'image': '08.jpg'
+                'image': '04.jpg'
             });
             break;
         case '#!/food_1':
             render('food_1', {
-                'image': '09.jpg'
+                'image': '05.jpg'
             });
             break;
         case '#!/room':
             render('room', {
-                'image': '06.jpg'
+                'image': 'money.jpg'
             });
             break;
         case '#!/room_1':
             render('room_1', {
-                'image': '07.jpg'
+                'image': 'treasure.jpg'
             });
             break;
         case '#!/room_2':
             render('room_2', {
-                'image': '08.jpg'
+                'image': 'luck.jpg'
             });
             break;
         case '#!/vendor':
             render('vendor', {
-                'image': '05.jpg'
+                'image': '12.jpg'
             });
             break;
         case '#!/service':
             render('service', {
-                'image': '09.jpg'
+                'image': '13.jpg'
             });
             break;
         case '#!/boby_service':
             render('boby_service', {
-                'image': '10.jpg'
+                'image': '14.jpg'
             });
             break;
         default:
